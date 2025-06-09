@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        textarea{
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <input list="li" onselect="alert('hello')">
+    <datalist id="li">
+        <option value="brouser"></option>
+        <option value="edgre"></option>
+        <option value="mango"></option>
+        <option value="applae"></option>
+        <option value="guavava"></option>
+    </datalist> -->
+
+
+    <textarea name="typetext" id="typing">
+    </textarea><br>
+    <label for="typing">Word Count: <span id="word"></span></label>
+
+    <script>
+
+        let typ = document.getElementById("typing");
+        let word = document.getElementById("word");
+        typ.addEventListener("input",function(){
+            let val = typ.value.length;            
+            console.log(val);
+            //  const currentLength = textarea.value.length;
+            word.innerHTML = val;
+        })
+        word.innerHTML = "hello world !";
+        
+
+
+    </script>
+</body>
+
+</html>

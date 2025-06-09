@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colo:#0253;
+    --color1:#25CED1;
+    --color2:#FFFFFF;
+    --color3:#FECADE;
+    --color4:#FF8A58;
+    --color4:#EA526F;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+        color: #fff;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.logo{
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 75%;
+    height: 40px;
+}
+
+.login-dital button a{
+    color: rgb(173, 226, 129);
+}
+
+.search-bar{
+    width: 700px;
+    height: 40px;
+    position: relative;
+}
+
+.search-bar input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius:5px  0 0 5px;
+    outline:none;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;    
+    background-color: white;
+}
+
+.search-bar button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.login{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #0066ff;
+    border-radius: 5px;
+}
+
+.login:hover .login-dital{
+    display: block;
+}
+
+.login-dital{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border: 1px solid rgb(240, 229, 229);
+    display: none;
+    border-radius: 5px;
+  
+}
+
+.login-dital button{
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    color:olivedrab;
+}
+
+.login-dital hr{
+    width: 180px;
+    margin:5px auto; 
+}
+
+.login-dital ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.login-dital ul li{
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+}
+
+.login-dital ul li i{
+    margin: 10px;
+}
+
+
+.bi{
+    font-size: 18px;
+}
+
+.spanTag{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.cart{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart:hover{
+    background-color: #0066ff;
+    border-radius: 10px;
+}
+
+.servces{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.servces:hover{
+    background-color: #0066ff;
+    border-radius: 5px;
+}
+
+
+.servces:hover .servces-list{
+    display: block;
+}
+
+.servces span{
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.servces-list{
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    left: -120px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(252, 251, 251);
+    border: 1px solid rgb(240, 229, 229);
+    border-radius: 5px;
+}
+
+.servces-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.servces-list ul li{
+    margin: 15px 2px; 
+    font-size: 14px;
+}
+
+.servces-list ul li i{
+    margin:0 7px;
+}
+
+
+/* nav TWO */
+.nav2{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image:linear-gradient(60deg,#cab9e7,#9efcfc);
+}
+
+
+.nav-menu{
+    width: 100px;
+    height:65px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;   
+    justify-content: centerś;
+}
+
+.nav-menu img{
+    width: 60px;
+    height: 50px;
+}
+/* end header and nav */
+
+
+/* footer css  */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #e1f3fd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}   
+
+.footer-cover{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.footer-items{
+    width: 300px;
+    height:100%;
+    padding-top: 20px;
+}
+
+.footer-heading{
+    width: 100%;
+    height: 10vh;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.footer-content{
+    width: 100%;
+    height: 15vh;
+    font-size: 14px;
+}
+
+.footer-content li{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+.footer-content li a{
+    color: black;
+    font-size: 14px;
+}
+.footer-content li a:hover{
+    color:var(--color1);
+}
+
+.footer-buttom{
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
