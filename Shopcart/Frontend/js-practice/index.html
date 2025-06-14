@@ -10,9 +10,19 @@
             width: 300px;
             height: 150px;
         }
+
+        .box{
+            width="400px";
+            height="400px";
+        }
+        .box input,button{
+            width="150px";
+            height="40px";
+        }               
+            
+        
     </style>
 </head>
-
 <body>
     <!-- <input list="li" onselect="alert('hello')">
     <datalist id="li">
@@ -23,11 +33,20 @@
         <option value="guavava"></option>
     </datalist> -->
 
+    <!-- input Number -->
+    <div class="box">
+        <input type="text" id="nu">
+        <button id="sub">subject</button>
+        <p id="demo"></p>
+    </div>
+
 
     <textarea name="typetext" id="typing">
     </textarea><br>
     <label for="typing">Word Count: <span id="word"></span></label>
 
+
+    
     <script>
 
         let typ = document.getElementById("typing");
@@ -39,8 +58,16 @@
             word.innerHTML = val;
         })
         word.innerHTML = "hello world !";
-        
 
+        // box input 
+        let inp = document.getElementById("nu");
+        let btn = document.getElementById("sub");
+        let print = document.getElementById("demo");
+
+        btn.addEventLessner("click",function(){
+            
+        })
+        
 
     </script>
 </body>
